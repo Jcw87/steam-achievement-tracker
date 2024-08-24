@@ -1,0 +1,47 @@
+
+:root {
+    --achievement-color-common: #e0e0e0;
+    --achievement-color-uncommon: #00c000;
+    --achievement-color-rare: #0070dd;
+    --achievement-color-epic: #a335ee;
+    --achievement-color-legendary: #ff8000;
+    --achievement-color-broken: red;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.achievement-box {
+    width: fit-content;
+    height: fit-content;
+    padding: 4px;
+}
+
+.achievement-common {
+    background-color: var(--achievement-color-common);
+}
+
+.achievement-uncommon {
+    background-color: var(--achievement-color-uncommon);
+}
+
+.achievement-rare {
+    background-color: var(--achievement-color-rare);
+}
+
+.achievement-epic {
+    background-color: var(--achievement-color-epic);
+}
+
+.achievement-legendary {
+    background-color: var(--achievement-color-legendary);
+}
+
+.achievement-broken {
+    background-color: var(--achievement-color-broken);
+}
+
+.achievement-cell {
+    padding: 1px;
+}

@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Backend",
+            "cwd": "${workspaceFolder}/backend",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Frontend",
+            "cwd": "${workspaceFolder}/frontend",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Worker",
+            "cwd": "${workspaceFolder}/backend",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "run",
+                "worker",
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Test",
+            "cwd": "${workspaceFolder}/backend",
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm",
+                "--enable-source-maps",
+                "test.ts",
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+    ]
+}

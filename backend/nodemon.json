@@ -1,0 +1,5 @@
+{
+    "watch": ["./"],
+    "ext": "ts,js,json",
+    "exec": "node --loader ts-node/esm --enable-source-maps"
+}

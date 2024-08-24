@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"outDir": "dist",
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"strictPropertyInitialization": false,
+		"skipLibCheck": true,
+		"experimentalDecorators": true,
+	},
+	"exclude": [
+		"node_modules/**",
+	],
+	"ts-node": {
+		"esm": true,
+		"experimentalSpecifierResolution": "node",
+	}
+}
